@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia Mundial do Karate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+            padding-top: 60px;
+        }
+
+        .banner {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                        url('https://images.unsplash.com/photo-1555597673-b21d5c935865?q=80&w=1200') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+            padding: 0 10%;
+        }
+
+        h1 {
+            font-size: 38px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        h2 {
+            font-size: 26px;
+            color: #d9381e;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #d9381e;
+            padding-bottom: 5px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #1a1a1a;
+            color: #ffffffee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 8%;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        }
+
+        .navbar .logo-area a {
+            color: #de2828;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .navbar ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        .navbar ul li a {
+            color: #a39494e4;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        .navbar ul li a:hover {
+            color: #d9381e;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 5%;
+        }
+
+        .grid-conteudo {
+            display: flex;
+            gap: 40px;
+            margin-top: 20px;
+        }
+
+        .texto-principal {
+            flex: 2;
+        }
+
+        .sidebar-imagem {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sidebar-imagem img {
+            width: 100%;
+            height: 100%;
+            min-height: 450px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        /* RODAPÉ (Toda a página, links e identificação) */
+        footer {
+            background-color: #1a1a1a;
+            color: #7a7a7a;
+            padding: 30px 5%;
+            margin-top: 50px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-info {
+            font-size: 13px; /* Entre 12px e 14px */
+        }
+
+        .footer-links a {
+            color: #bbb;
+            text-decoration: none;
+            font-size: 13px;
+            margin-left: 15px;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #fff;
+        }
+
+        .ucb-logo {
+            font-weight: bold;
+            color: #0056b3;
+            background: #fff;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo-area">
+            <a href="#"><i class="fa-solid fa-user-ninja"></i> KARATE'S DAY</a>
+        </div>
+        <ul>
+            <li><a href="#historia">História</a></li>
+            <li><a href="#datas">Datas</a></li>
+            <li><a href="#judo">Ligação com o Judô</a></li>
+        </ul>
+    </nav>
+
+    <header class="banner">
+        <h1>Dia Mundial do Karate</h1>
+        <p style="text-align: center; max-width: 600px; color: #ddd;">História, filosofia e conexões que moldaram esta arte marcial milenar.</p>
+    </header>
+
+    <main class="container">
+        
+        <div class="grid-conteudo">
+            
+            <section class="texto-principal">
+                
+                <article id="historia">
+                    <h2>O caminho das mãos vazias</h2>
+                    <p>O Karate é uma arte marcial desenvolvida a partir de métodos nativos de combate das Ilhas Ryukyu (hoje Okinawa, no Japão). A palavra "Karate" significa literalmente "mãos vazias", indicando que seus praticantes utilizam apenas o próprio corpo como ferramenta de defesa e contra-ataque.</p>
+                    <p>Mais do que técnicas de socos e chutes, o Karate-Dō é uma filosofia de vida que busca o aperfeiçoamento do caráter dos seus praticantes através da disciplina mental e do respeito mútuo.</p>
+                </article>
+
+                <article id="datas">
+                    <h2>Por que existem datas diferentes?</h2>
+                    <p>É comum encontrar menções ao Dia do Karate em datas distintas do calendário devido a marcos históricos e decisões de federações diferentes:</p>
+                    <p><strong>25 de Outubro (Dia Mundial do Karate oficial):</strong> Esta é a data mais tradicional e aceita globalmente. Ela foi criada em 2005 pela <em>Okinawa Karate World Tournament</em> para celebrar o dia 25 de outubro de 1936, data histórica em que os grandes mestres de Okinawa se reuniram para oficializar o nome "Karate" substituindo os termos antigos.</p>
+                    <p><strong>Outras Datas Locais:</strong> Dependendo do país ou de decretos estaduais/nacionais específicos, federações locais podem celebrar o Karate em dias que homenageiam a chegada de grandes mestres pioneiros àquela região ou a fundação de suas primeiras confederações nacionais.</p>
+                </article>
+
+                <article id="judo">
+                    <h2>Ligação histórica com o judô</h2>
+                    <p>O Karate moderno possui uma profunda ligação com o Judô, estabelecida principalmente no início do século XX quando o mestre <strong>Gichin Funakoshi</strong> levou o Karate de Okinawa para o Japão continental.</p>
+                    <p>Para que o Karate fosse aceito pela comunidade de artes marciais japonesa da época (a Dai Nippon Butokukai), Funakoshi adaptou vários elementos organizacionais criados originalmente por <strong>Jigoro Kano</strong>, o fundador do Judô:</p>
+                    <ul>
+                        <li><strong>O Uniforme (Karategi):</strong> O traje branco usado no Karate foi diretamente inspirado no <em>Judogi</em> pesado do Judô, porém adaptado com um tecido mais leve para facilitar os movimentos rápidos de golpes e chutes.</li>
+                        <li><strong>O Sistema de Faixas (Kyu/Dan):</strong> O Karate original de Okinawa não utilizava faixas coloridas. O sistema de graduação que divide os praticantes entre iniciantes (faixas coloridas) e mestres (faixa preta) foi totalmente copiado do modelo que Jigoro Kano implementou com sucesso no Judô.</li>
+                        <li><strong>Apoio de Mestres:</strong> O próprio fundador do Judô, Jigoro Kano, foi um grande entusiasta do Karate. Ele chegou a convidar Funakoshi para fazer demonstrações de Karate dentro do Kodokan (a sede mundial do Judô), ajudando a popularizar o esporte pelo mundo.</li>
+                    </ul>
+                </article>
+
+            </section>
+
+            <aside class="sidebar-imagem">
+                <img src="karateca.jpg">
+            </aside>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <p><strong>Letícia Paulino de Negreiros</strong> </p>
+            </div>
+            
+            <div class="ucb-logo">
+                <i class="fa-solid fa-graduation-cap"></i> UCB - Universidade Católica
+            </div>
+
+            <div class="footer-links">
+                <a href="https://wpdatatables.com/" target="_blank">wpDataTables</a>
+                <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>
+                <a href="https://fooplugins.com/" target="_blank">FooPlugins</a>
